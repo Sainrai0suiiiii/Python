@@ -95,4 +95,37 @@ for i in range(1, 11):
 
     print(i)
 
+# 11. FIND A NUMBER
 
+numbers = [10, 20, 30, 40, 50]
+
+search = int(input("Enter a number to search: "))
+
+for number in numbers:
+
+    if number == search:
+        print("Number found!")
+        break
+
+else:
+    print("Number not found!")
+
+
+# 12. SIMPLE LOGIN ATTEMPTS
+
+attempts = 0
+
+while attempts < 3:
+
+    password = input("Enter password: ")
+
+    if password == "python123":
+        print("Login successful!")
+        break
+
+    else:
+        print("Incorrect password!")
+        attempts += 1
+
+else:
+    print("Too many attempts!")
